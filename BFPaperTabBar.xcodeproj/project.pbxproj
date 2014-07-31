@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		662017E80B3F42B2B7243DA1 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ADF3E33D92424085ADAD7D /* libPods.a */; };
+		F4CA6F8D1988BC600027680F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CA6F8C1988BC600027680F /* Foundation.framework */; };
+		F4CA6F8F1988BC600027680F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CA6F8E1988BC600027680F /* CoreGraphics.framework */; };
+		F4CA6F911988BC600027680F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CA6F901988BC600027680F /* UIKit.framework */; };
+		F4CA6F971988BC600027680F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4CA6F951988BC600027680F /* InfoPlist.strings */; };
+		F4CA6F991988BC600027680F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA6F981988BC600027680F /* main.m */; };
+		F4CA6F9D1988BC600027680F /* BFPaperAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA6F9C1988BC600027680F /* BFPaperAppDelegate.m */; };
+		F4CA6FA01988BC600027680F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4CA6F9E1988BC600027680F /* Main.storyboard */; };
+		F4CA6FA51988BC600027680F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4CA6FA41988BC600027680F /* Images.xcassets */; };
+		F4CA6FAC1988BC600027680F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CA6FAB1988BC600027680F /* XCTest.framework */; };
+		F4CA6FAD1988BC600027680F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CA6F8C1988BC600027680F /* Foundation.framework */; };
+		F4CA6FAE1988BC600027680F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4CA6F901988BC600027680F /* UIKit.framework */; };
+		F4CA6FB61988BC600027680F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4CA6FB41988BC600027680F /* InfoPlist.strings */; };
+		F4CA6FB81988BC600027680F /* BFPaperTabBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA6FB71988BC600027680F /* BFPaperTabBarTests.m */; };
+		F4CA6FC31988BD1B0027680F /* BFPaperTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA6FC21988BD1B0027680F /* BFPaperTabBarController.m */; };
+		F4CA6FC61988D22C0027680F /* BFPaperTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4CA6FC51988D22C0027680F /* BFPaperTabBar.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4CA6FAF1988BC600027680F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4CA6F811988BC600027680F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4CA6F881988BC600027680F;
+			remoteInfo = BFPaperTabBar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		084231E2BEF24944963556AC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		98ADF3E33D92424085ADAD7D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CA6F891988BC600027680F /* BFPaperTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFPaperTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CA6F8C1988BC600027680F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F4CA6F8E1988BC600027680F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F4CA6F901988BC600027680F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4CA6F941988BC600027680F /* BFPaperTabBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BFPaperTabBar-Info.plist"; sourceTree = "<group>"; };
+		F4CA6F961988BC600027680F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4CA6F981988BC600027680F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F4CA6F9A1988BC600027680F /* BFPaperTabBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BFPaperTabBar-Prefix.pch"; sourceTree = "<group>"; };
+		F4CA6F9B1988BC600027680F /* BFPaperAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFPaperAppDelegate.h; sourceTree = "<group>"; };
+		F4CA6F9C1988BC600027680F /* BFPaperAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFPaperAppDelegate.m; sourceTree = "<group>"; };
+		F4CA6F9F1988BC600027680F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4CA6FA41988BC600027680F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4CA6FAA1988BC600027680F /* BFPaperTabBarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BFPaperTabBarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4CA6FAB1988BC600027680F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F4CA6FB31988BC600027680F /* BFPaperTabBarTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BFPaperTabBarTests-Info.plist"; sourceTree = "<group>"; };
+		F4CA6FB51988BC600027680F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4CA6FB71988BC600027680F /* BFPaperTabBarTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFPaperTabBarTests.m; sourceTree = "<group>"; };
+		F4CA6FC11988BD1B0027680F /* BFPaperTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPaperTabBarController.h; sourceTree = "<group>"; };
+		F4CA6FC21988BD1B0027680F /* BFPaperTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPaperTabBarController.m; sourceTree = "<group>"; };
+		F4CA6FC41988D22C0027680F /* BFPaperTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BFPaperTabBar.h; path = ../Classes/BFPaperTabBar.h; sourceTree = "<group>"; };
+		F4CA6FC51988D22C0027680F /* BFPaperTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BFPaperTabBar.m; path = ../Classes/BFPaperTabBar.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4CA6F861988BC600027680F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA6F8F1988BC600027680F /* CoreGraphics.framework in Frameworks */,
+				F4CA6F911988BC600027680F /* UIKit.framework in Frameworks */,
+				F4CA6F8D1988BC600027680F /* Foundation.framework in Frameworks */,
+				662017E80B3F42B2B7243DA1 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CA6FA71988BC600027680F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA6FAC1988BC600027680F /* XCTest.framework in Frameworks */,
+				F4CA6FAE1988BC600027680F /* UIKit.framework in Frameworks */,
+				F4CA6FAD1988BC600027680F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F42AC280198A2DE900C86DAB /* Custom TabBar Controller JUST FOR DEMO */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA6FC11988BD1B0027680F /* BFPaperTabBarController.h */,
+				F4CA6FC21988BD1B0027680F /* BFPaperTabBarController.m */,
+			);
+			name = "Custom TabBar Controller JUST FOR DEMO";
+			sourceTree = "<group>";
+		};
+		F42AC281198A2E0000C86DAB /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA6FC41988D22C0027680F /* BFPaperTabBar.h */,
+				F4CA6FC51988D22C0027680F /* BFPaperTabBar.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F4CA6F801988BC600027680F = {
+			isa = PBXGroup;
+			children = (
+				F4CA6F921988BC600027680F /* BFPaperTabBar */,
+				F4CA6FB11988BC600027680F /* BFPaperTabBarTests */,
+				F4CA6F8B1988BC600027680F /* Frameworks */,
+				F4CA6F8A1988BC600027680F /* Products */,
+				084231E2BEF24944963556AC /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F4CA6F8A1988BC600027680F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA6F891988BC600027680F /* BFPaperTabBar.app */,
+				F4CA6FAA1988BC600027680F /* BFPaperTabBarTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4CA6F8B1988BC600027680F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA6F8C1988BC600027680F /* Foundation.framework */,
+				F4CA6F8E1988BC600027680F /* CoreGraphics.framework */,
+				F4CA6F901988BC600027680F /* UIKit.framework */,
+				F4CA6FAB1988BC600027680F /* XCTest.framework */,
+				98ADF3E33D92424085ADAD7D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4CA6F921988BC600027680F /* BFPaperTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F42AC281198A2E0000C86DAB /* Classes */,
+				F42AC280198A2DE900C86DAB /* Custom TabBar Controller JUST FOR DEMO */,
+				F4CA6F9E1988BC600027680F /* Main.storyboard */,
+				F4CA6FA41988BC600027680F /* Images.xcassets */,
+				F4CA6F931988BC600027680F /* Supporting Files */,
+			);
+			path = BFPaperTabBar;
+			sourceTree = "<group>";
+		};
+		F4CA6F931988BC600027680F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA6F9B1988BC600027680F /* BFPaperAppDelegate.h */,
+				F4CA6F9C1988BC600027680F /* BFPaperAppDelegate.m */,
+				F4CA6F941988BC600027680F /* BFPaperTabBar-Info.plist */,
+				F4CA6F951988BC600027680F /* InfoPlist.strings */,
+				F4CA6F981988BC600027680F /* main.m */,
+				F4CA6F9A1988BC600027680F /* BFPaperTabBar-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4CA6FB11988BC600027680F /* BFPaperTabBarTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA6FB71988BC600027680F /* BFPaperTabBarTests.m */,
+				F4CA6FB21988BC600027680F /* Supporting Files */,
+			);
+			path = BFPaperTabBarTests;
+			sourceTree = "<group>";
+		};
+		F4CA6FB21988BC600027680F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4CA6FB31988BC600027680F /* BFPaperTabBarTests-Info.plist */,
+				F4CA6FB41988BC600027680F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4CA6F881988BC600027680F /* BFPaperTabBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CA6FBB1988BC600027680F /* Build configuration list for PBXNativeTarget "BFPaperTabBar" */;
+			buildPhases = (
+				7F856EBAF099439395507D16 /* Check Pods Manifest.lock */,
+				F4CA6F851988BC600027680F /* Sources */,
+				F4CA6F861988BC600027680F /* Frameworks */,
+				F4CA6F871988BC600027680F /* Resources */,
+				B1BAF1BC1DFF4919B44B00F6 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BFPaperTabBar;
+			productName = BFPaperTabBar;
+			productReference = F4CA6F891988BC600027680F /* BFPaperTabBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4CA6FA91988BC600027680F /* BFPaperTabBarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4CA6FBE1988BC600027680F /* Build configuration list for PBXNativeTarget "BFPaperTabBarTests" */;
+			buildPhases = (
+				F4CA6FA61988BC600027680F /* Sources */,
+				F4CA6FA71988BC600027680F /* Frameworks */,
+				F4CA6FA81988BC600027680F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4CA6FB01988BC600027680F /* PBXTargetDependency */,
+			);
+			name = BFPaperTabBarTests;
+			productName = BFPaperTabBarTests;
+			productReference = F4CA6FAA1988BC600027680F /* BFPaperTabBarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4CA6F811988BC600027680F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = BFPaper;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Bence Feher";
+				TargetAttributes = {
+					F4CA6FA91988BC600027680F = {
+						TestTargetID = F4CA6F881988BC600027680F;
+					};
+				};
+			};
+			buildConfigurationList = F4CA6F841988BC600027680F /* Build configuration list for PBXProject "BFPaperTabBar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4CA6F801988BC600027680F;
+			productRefGroup = F4CA6F8A1988BC600027680F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4CA6F881988BC600027680F /* BFPaperTabBar */,
+				F4CA6FA91988BC600027680F /* BFPaperTabBarTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4CA6F871988BC600027680F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA6FA51988BC600027680F /* Images.xcassets in Resources */,
+				F4CA6F971988BC600027680F /* InfoPlist.strings in Resources */,
+				F4CA6FA01988BC600027680F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CA6FA81988BC600027680F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA6FB61988BC600027680F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7F856EBAF099439395507D16 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B1BAF1BC1DFF4919B44B00F6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4CA6F851988BC600027680F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA6FC31988BD1B0027680F /* BFPaperTabBarController.m in Sources */,
+				F4CA6FC61988D22C0027680F /* BFPaperTabBar.m in Sources */,
+				F4CA6F991988BC600027680F /* main.m in Sources */,
+				F4CA6F9D1988BC600027680F /* BFPaperAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4CA6FA61988BC600027680F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4CA6FB81988BC600027680F /* BFPaperTabBarTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4CA6FB01988BC600027680F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4CA6F881988BC600027680F /* BFPaperTabBar */;
+			targetProxy = F4CA6FAF1988BC600027680F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4CA6F951988BC600027680F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CA6F961988BC600027680F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4CA6F9E1988BC600027680F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CA6F9F1988BC600027680F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4CA6FB41988BC600027680F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4CA6FB51988BC600027680F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4CA6FB91988BC600027680F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F4CA6FBA1988BC600027680F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4CA6FBC1988BC600027680F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084231E2BEF24944963556AC /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BFPaperTabBar/BFPaperTabBar-Prefix.pch";
+				INFOPLIST_FILE = "BFPaperTabBar/BFPaperTabBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F4CA6FBD1988BC600027680F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 084231E2BEF24944963556AC /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BFPaperTabBar/BFPaperTabBar-Prefix.pch";
+				INFOPLIST_FILE = "BFPaperTabBar/BFPaperTabBar-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F4CA6FBF1988BC600027680F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BFPaperTabBar.app/BFPaperTabBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BFPaperTabBar/BFPaperTabBar-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BFPaperTabBarTests/BFPaperTabBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F4CA6FC01988BC600027680F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BFPaperTabBar.app/BFPaperTabBar";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BFPaperTabBar/BFPaperTabBar-Prefix.pch";
+				INFOPLIST_FILE = "BFPaperTabBarTests/BFPaperTabBarTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4CA6F841988BC600027680F /* Build configuration list for PBXProject "BFPaperTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CA6FB91988BC600027680F /* Debug */,
+				F4CA6FBA1988BC600027680F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CA6FBB1988BC600027680F /* Build configuration list for PBXNativeTarget "BFPaperTabBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CA6FBC1988BC600027680F /* Debug */,
+				F4CA6FBD1988BC600027680F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4CA6FBE1988BC600027680F /* Build configuration list for PBXNativeTarget "BFPaperTabBarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4CA6FBF1988BC600027680F /* Debug */,
+				F4CA6FC01988BC600027680F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4CA6F811988BC600027680F /* Project object */;
+}

@@ -1,0 +1,49 @@
+//
+//  BFPaperTabBar.h
+//  BFPaperTabBar
+//
+//  Created by Bence Feher on 7/30/14.
+//  Copyright (c) 2014 Bence Feher. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+// Nice circle diameter constants:
+static CGFloat const bfPaperTabBar_tapCircleDiameterMedium = 250.f;
+static CGFloat const bfPaperTabBar_tapCircleDiameterSmall = bfPaperTabBar_tapCircleDiameterMedium / 2.f;
+static CGFloat const bfPaperTabBar_tapCircleDiameterLarge = bfPaperTabBar_tapCircleDiameterMedium * 1.5f;
+static CGFloat const bfPaperTabBar_tapCircleDiameterDefault = -1.f;
+
+
+@interface BFPaperTabBar : UITabBar
+
+
+/** A flag to set to YES to use Smart Color, or NO to use a custom color scheme. While Smart Color is the default (usesSmartColor = YES), customization is cool too. */
+@property (nonatomic) BOOL usesSmartColor;
+
+/** The UIColor to use for the circle which appears where you tap. NOTE: Setting this defeats the "Smart Color" ability of the tap circle. Alpha values less than 1 are recommended. */
+@property UIColor *tapCircleColor;
+
+/** The UIColor to fade clear backgrounds to. NOTE: Setting this defeats the "Smart Color" ability of the background fade. An alpha value of 1 is recommended, as the fade is a constant (clearBGFadeConstant) defined in the BFpaperButton.m. This bothers me too. */
+@property UIColor *backgroundFadeColor;
+
+/** A flag to set to YES to have the tap-circle ripple from point of touch. If this is set to NO, the tap-circle will always ripple from the center of the button. Default is YES. */
+@property BOOL rippleFromTapLocation;
+
+/** The CGFloat value representing the Diameter of the tap-circle. By default it will be the result of MAX(self.frame.width, self.frame.height). Any value less than zero will result in default being used. The constants: tapCircleDiameterLarge, tapCircleDiameterMedium, and tapCircleDiameterSmall are also available for use. */
+@property CGFloat tapCircleDiameter;
+
+/** The UIColor to use for the underline below the currently selected tab. NOTE: Setting this defeats the "Smart Color" ability of this underline. */
+@property UIColor *underlineColor;
+
+/** The CGFLoat to set the thickness (height) of the underline. NOTE: Any value greater than 1 will cover up the bottoms of low-hanging letters of a default TabBarItem's title. */
+@property CGFloat underlineThickness;
+
+/** A flag to set to YES to show an underline bar that tracks the currently selected tab. */
+@property (nonatomic) BOOL showUnderline;
+
+/** A flat to set to YES to show the tap-circle and background fade. If NO, they willnot appear. */
+@property BOOL showTapCircleAndBackgroundFade;
+
+
+@end
