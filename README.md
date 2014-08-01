@@ -4,7 +4,8 @@ BFPaperTabBar
 
 > iOS UITabBar inspired by Google's Paper Material Design.
 
-![Animated Screenshot](https://raw.githubusercontent.com/bfeher/BFPaperTabBar/master/BFPaperTabBarDemoGif.gif "Animated Screenshot")
+![Animated Screenshot](https://raw.githubusercontent.com/bfeher/BFPaperTabBar/master/BFPaperTabBarDemoGif.gif "Animated Screenshot")<br />
+*(The tiny dot on the bottom left is just the rounded corner of the iOS simulator showing. Also note that sometimes, when your View Controllers have non-white backgrounds, the iOS Simulator might show some strange color lines on the BFPaperTabBar. This does not show up on a real device.*
 
 
 About
@@ -90,7 +91,7 @@ Learn more at http://cocoapods.org
 Add this to your podfile to add BFPaperTabBar to your project.
 ```ruby
 platform :ios, '7.0'
-pod 'BFPaperTabBar', '~> 1.0.1'
+pod 'BFPaperTabBar', '~> 1.0.2'
 ```
 
 
