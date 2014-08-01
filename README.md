@@ -5,7 +5,7 @@ BFPaperTabBar
 > iOS UITabBar inspired by Google's Paper Material Design.
 
 ![Animated Screenshot](https://raw.githubusercontent.com/bfeher/BFPaperTabBar/master/BFPaperTabBarDemoGif.gif "Animated Screenshot")<br />
-*(The tiny dot on the bottom left is just the rounded corner of the iOS simulator showing. Also note that sometimes, when your View Controllers have non-white backgrounds, the iOS Simulator might show some strange color lines on the BFPaperTabBar. This does not show up on a real device.*
+*(The tiny dot on the bottom left is just the rounded corner of the iOS simulator showing. Also note that sometimes the iOS Simulator might show some strange color lines on the BFPaperTabBar. This does not show up on a real device.*
 
 
 About
