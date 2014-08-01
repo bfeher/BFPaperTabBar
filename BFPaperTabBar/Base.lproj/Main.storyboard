@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Item 1-->
+        <!--View Controller - Tab 1-->
         <scene sceneID="orm-Cj-fqk">
             <objects>
                 <viewController id="vQj-j0-v9A" sceneMemberID="viewController">
@@ -34,7 +34,7 @@
                             <constraint firstAttribute="centerY" secondItem="eII-Q5-W0A" secondAttribute="centerY" id="VkT-EI-ltI"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="fcW-8G-DaM"/>
+                    <tabBarItem key="tabBarItem" title="Tab 1" id="fcW-8G-DaM"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r29-Qr-nRx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +60,7 @@
             </objects>
             <point key="canvasLocation" x="-355" y="576"/>
         </scene>
-        <!--View Controller - Item 3-->
+        <!--View Controller - Tab 3-->
         <scene sceneID="qg2-v0-TwL">
             <objects>
                 <viewController id="wZy-nf-tIR" sceneMemberID="viewController">
@@ -90,13 +90,13 @@
                             <constraint firstAttribute="centerX" secondItem="lFG-GG-NAq" secondAttribute="centerX" id="u8F-lt-WU7"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="2" title="Item 3" id="RJc-97-CTo"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Tab 3" id="RJc-97-CTo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bR8-Zw-BPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="219" y="1255"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--View Controller - Tab 2-->
         <scene sceneID="Zdv-Na-kcf">
             <objects>
                 <viewController id="fb4-uE-a5r" sceneMemberID="viewController">
@@ -126,7 +126,7 @@
                             <constraint firstAttribute="centerX" secondItem="ftO-zs-DQR" secondAttribute="centerX" id="bzP-OW-33O"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" tag="1" title="Item 2" id="5s3-y2-zbk"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Tab 2" id="5s3-y2-zbk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="caW-Th-Stp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
