@@ -67,5 +67,10 @@ static CGFloat const bfPaperTabBar_tapCircleDiameterDefault = -1.f;
 /** A flag to set to YES to show the tap-circle and background fade. If NO, they will not appear. */
 @property BOOL showTapCircleAndBackgroundFade;
 
-
 @end
+
+
+
+
+
+

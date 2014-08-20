@@ -41,6 +41,7 @@
 
 
 @implementation BFPaperTabBar
+static dispatch_once_t oncePredicate;   // Used for initializing tab touch gesture recognizers only once.
 // Constants used for tweaking the look/feel of:
 // -animation durations:
 static CGFloat const bfPaperTabBar_animationDurationConstant       = 0.2f;
@@ -55,7 +56,6 @@ static CGFloat const bfPaperTabBar_backgroundFadeConstant          = 0.12f;
 // - Default colors:
 #define BFPAPERTABBAR__DUMB_TAP_FILL_COLOR  [UIColor colorWithWhite:0.1 alpha:bfPaperTabBar_tapFillConstant]
 #define BFPAPERTABBAR__DUMB_BG_FADE_COLOR   [UIColor colorWithWhite:0.3 alpha:1]
-
 
 
 
@@ -105,15 +105,9 @@ static CGFloat const bfPaperTabBar_backgroundFadeConstant          = 0.12f;
 - (BOOL)endCustomizingAnimated:(BOOL)animated
 {
     // Re-tag each bar item:
-    for (int i = 0; i < self.items.count; i++) {
-        ((UITabBarItem *)[self.items objectAtIndex:i]).tag = i;
-        UIView *tab = [self viewForTabBarItemAtIndex:i];
-        tab.tag = i;
-    }
-
+    [self indexTabs];
     return [super endCustomizingAnimated:animated];
 }
-
 
 -(void)layoutSublayersOfLayer:(CALayer *)layer
 {
@@ -122,6 +116,16 @@ static CGFloat const bfPaperTabBar_backgroundFadeConstant          = 0.12f;
     if (self.showUnderline) {
         [self setUnderlineForTabIndex:self.selectedTabIndex animated:YES];
     }
+}
+
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    dispatch_once(&oncePredicate, ^{
+        // Add gesture recognizers to each tabBarItem's view and tag them:
+        [self addGestureRecognizerToTabs];
+    });
 }
 
 /*
@@ -157,21 +161,9 @@ static CGFloat const bfPaperTabBar_backgroundFadeConstant          = 0.12f;
 #pragma mark - Setup
 - (void)setup
 {
-    // Add gesture recognizers to each tabBarItem's view and tag them:
-    for (int i = 0; i < self.items.count; i++) {
-        UILongPressGestureRecognizer *press = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
-        press.delegate = self;
-        press.delaysTouchesEnded = NO;
-        press.delaysTouchesBegan = NO;
-        press.cancelsTouchesInView = NO;
-        press.minimumPressDuration = 0;
-        
-        ((UITabBarItem *)[self.items objectAtIndex:i]).tag = i;
-        UIView *tab = [self viewForTabBarItemAtIndex:i];
-        tab.tag = i;
-        [tab addGestureRecognizer:press];
-        press = nil;
-    }
+//    self.paperDelegate = [[BFPaperTabBarDelegate alloc] init];
+//    self.delegate = self.paperDelegate;
+    
     
     // Defaults:
     self.usesSmartColor = YES;
@@ -265,6 +257,38 @@ static CGFloat const bfPaperTabBar_backgroundFadeConstant          = 0.12f;
     } completion:^(BOOL finished) {
     }];
 }
+
+
+- (void)addGestureRecognizerToTabs
+{
+    for (int i = 0; i < self.items.count; i++) {
+        ((UITabBarItem *)[self.items objectAtIndex:i]).tag = i;
+        UIView *tabView = [self viewForTabBarItemAtIndex:i];
+        tabView.tag = i;
+        
+        //NSLog(@"adding GR to tab %@ (%d)", ((UITabBarItem *)[self.items objectAtIndex:i]).title, i);
+        UILongPressGestureRecognizer *press = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongPress:)];
+        press.delegate = self;
+        press.delaysTouchesEnded = NO;
+        press.delaysTouchesBegan = NO;
+        press.cancelsTouchesInView = NO;
+        press.minimumPressDuration = 0;
+        [tabView addGestureRecognizer:press];
+        press = nil;
+    }
+}
+
+- (void)indexTabs
+{
+    for (int i = 0; i < self.items.count; i++) {
+        UITabBarItem *tab = [self.items objectAtIndex:i];
+        //NSLog(@"applying index %d to %@", i, tab.title);
+        tab.tag = i;
+        UIView *tabView = [self viewForTabBarItemAtIndex:i];
+        tabView.tag = i;
+    }
+}
+
 
 #pragma mark - Gesture Recognizer Handlers
 - (void)handleLongPress:(UILongPressGestureRecognizer *)longPress

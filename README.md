@@ -8,6 +8,13 @@ BFPaperTabBar
 *(The tiny dot on the bottom left is just the rounded corner of the iOS simulator showing. Also note that sometimes the iOS Simulator might show some strange color lines on the BFPaperTabBar. This does not show up on a real device.*
 
 
+To Do
+---------
+Reordering tabs.
+Adding/Removing tabs.
+Stop crying while trying to implement the above.
+
+
 About
 ---------
 _BFPaperTabBar_ is a subclass of UITabBar that behaves much like the new paper tab bar from Google's Material Design Labs.
@@ -91,7 +98,7 @@ Learn more at http://cocoapods.org
 Add this to your podfile to add BFPaperTabBar to your project.
 ```ruby
 platform :ios, '7.0'
-pod 'BFPaperTabBar', '~> 1.0.2'
+pod 'BFPaperTabBar', '~> 1.0.3'
 ```
 
 

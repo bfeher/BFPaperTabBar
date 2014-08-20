@@ -37,7 +37,7 @@
 
 
 
-@interface BFPaperTabBarController () <UIGestureRecognizerDelegate>
+@interface BFPaperTabBarController ()
 @end
 
 @implementation BFPaperTabBarController
@@ -58,6 +58,7 @@
     // Do any additional setup after loading the view.
     
     self.tabBar.tintColor = [UIColor paperColorDeepPurpleA400];
+    
     
     /*
      * Uncomment the lines below to see how you can customize the tab bar:
@@ -102,7 +103,6 @@
     // Pass the selected object to the new view controller.
 }
 */
-
 
 
 @end
