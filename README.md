@@ -10,8 +10,8 @@ BFPaperTabBar
 
 To Do
 ---------
-Reordering tabs.
-Adding/Removing tabs.
+Reordering tabs.<br />
+Adding/Removing tabs.<br />
 Stop crying while trying to implement the above.
 
 
