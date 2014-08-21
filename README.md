@@ -10,6 +10,7 @@ BFPaperTabBar
 
 To Do
 ---------
+[Convince you to use BFPaperTabBarController instead!!!](https://github.com/bfeher/BFPaperTabBarController)<br />
 Reordering tabs.<br />
 Adding/Removing tabs.<br />
 Stop crying while trying to implement the above.
@@ -98,7 +99,7 @@ Learn more at http://cocoapods.org
 Add this to your podfile to add BFPaperTabBar to your project.
 ```ruby
 platform :ios, '7.0'
-pod 'BFPaperTabBar', '~> 1.0.3'
+pod 'BFPaperTabBar', '~> 1.0.4'
 ```
 
 
