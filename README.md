@@ -1,5 +1,7 @@
 BFPaperTabBar
 =============
+[Please consider using BFPaperTabBarController instead!!!](https://github.com/bfeher/BFPaperTabBarController)<br />
+
 [![CocoaPods](https://img.shields.io/cocoapods/v/BFPaperTabBar.svg?style=flat)](https://github.com/bfeher/BFPaperTabBar)
 
 > iOS UITabBar inspired by Google's Paper Material Design.
