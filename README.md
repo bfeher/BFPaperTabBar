@@ -1,6 +1,7 @@
 BFPaperTabBar
 =============
-[Please consider using BFPaperTabBarController instead!!!](https://github.com/bfeher/BFPaperTabBarController)<br />
+<span style="color:red;font-size:30;">I am no longer supporting this library.</span><br /><br />
+<span style="font-size:16;">[Please consider using BFPaperTabBarController instead, which I do support and works better than BFPaperTabBar!](https://github.com/bfeher/BFPaperTabBarController)</span><br />
 
 [![CocoaPods](https://img.shields.io/cocoapods/v/BFPaperTabBar.svg?style=flat)](https://github.com/bfeher/BFPaperTabBar)
 
@@ -101,7 +102,7 @@ Learn more at http://cocoapods.org
 Add this to your podfile to add BFPaperTabBar to your project.
 ```ruby
 platform :ios, '7.0'
-pod 'BFPaperTabBar', '~> 1.0.4'
+pod 'BFPaperTabBar', '~> 1.0.5'
 ```
 
 
