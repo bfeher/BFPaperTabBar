@@ -102,7 +102,7 @@ Learn more at http://cocoapods.org
 Add this to your podfile to add BFPaperTabBar to your project.
 ```ruby
 platform :ios, '7.0'
-pod 'BFPaperTabBar', '~> 1.0.5'
+pod 'BFPaperTabBar', '~> 1.0.6'
 ```
 
 

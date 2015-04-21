@@ -36,8 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		084231E2BEF24944963556AC /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		3E79B2CA149E983D950B37D4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		98ADF3E33D92424085ADAD7D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB4A16ECAE52C5D1424EA5E5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		F4CA6F891988BC600027680F /* BFPaperTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BFPaperTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4CA6F8C1988BC600027680F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F4CA6F8E1988BC600027680F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -86,6 +87,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56ED3AF63155DE72DA89FDC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB4A16ECAE52C5D1424EA5E5 /* Pods.debug.xcconfig */,
+				3E79B2CA149E983D950B37D4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F42AC280198A2DE900C86DAB /* Custom TabBar Controller JUST FOR DEMO */ = {
 			isa = PBXGroup;
 			children = (
@@ -111,7 +121,7 @@
 				F4CA6FB11988BC600027680F /* BFPaperTabBarTests */,
 				F4CA6F8B1988BC600027680F /* Frameworks */,
 				F4CA6F8A1988BC600027680F /* Products */,
-				084231E2BEF24944963556AC /* Pods.xcconfig */,
+				56ED3AF63155DE72DA89FDC5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -302,7 +312,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -437,32 +447,34 @@
 		};
 		F4CA6FBC1988BC600027680F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 084231E2BEF24944963556AC /* Pods.xcconfig */;
+			baseConfigurationReference = AB4A16ECAE52C5D1424EA5E5 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BFPaperTabBar/BFPaperTabBar-Prefix.pch";
 				INFOPLIST_FILE = "BFPaperTabBar/BFPaperTabBar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ED6ED561-B01D-49BF-B1AD-87CC7F02C8A7";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
 		F4CA6FBD1988BC600027680F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 084231E2BEF24944963556AC /* Pods.xcconfig */;
+			baseConfigurationReference = 3E79B2CA149E983D950B37D4 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BFPaperTabBar/BFPaperTabBar-Prefix.pch";
 				INFOPLIST_FILE = "BFPaperTabBar/BFPaperTabBar-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "ED6ED561-B01D-49BF-B1AD-87CC7F02C8A7";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
